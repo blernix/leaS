@@ -32,39 +32,48 @@ export default function ContactForm() {
     setSubmitStatus('loading')
     setErrorMessage('')
 
-    try {
-      const response = await fetch('/api/contact', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(data),
-      })
-
-      if (!response.ok) {
-        throw new Error('Erreur lors de l\'envoi du message')
-      }
-
+    // Simulation d'envoi (le vrai envoi se fera via votre microservice)
+    setTimeout(() => {
       setSubmitStatus('success')
       reset()
-    } catch (error) {
-      setSubmitStatus('error')
-      setErrorMessage(
-        error instanceof Error
-          ? error.message
-          : 'Une erreur est survenue. Veuillez réessayer.'
-      )
-    }
+    }, 1500)
+
+    // NOTE TECHNIQUE :
+    // Ce formulaire est actuellement en mode DEMO
+    // Pour activer l'envoi réel, connectez-le à votre microservice :
+    //
+    // try {
+    //   const response = await fetch('https://votre-api.com/contact', {
+    //     method: 'POST',
+    //     headers: { 'Content-Type': 'application/json' },
+    //     body: JSON.stringify(data),
+    //   })
+    //   if (!response.ok) throw new Error('Erreur')
+    //   setSubmitStatus('success')
+    //   reset()
+    // } catch (error) {
+    //   setSubmitStatus('error')
+    //   setErrorMessage('Une erreur est survenue.')
+    // }
   }
 
   return (
     <div>
+      {/* Mode DEMO - Information */}
+      <InfoBox type="info" title="Mode démonstration" className="mb-6">
+        <p className="text-sm">
+          <strong>Ce formulaire est actuellement en mode démonstration.</strong><br />
+          Les données ne sont pas réellement envoyées. Pour activer l'envoi,
+          connectez le formulaire à votre microservice d'envoi d'emails.
+        </p>
+      </InfoBox>
+
       {/* Message de succès */}
       {submitStatus === 'success' && (
-        <InfoBox type="success" title="Message envoyé !" className="mb-6">
+        <InfoBox type="success" title="Démonstration réussie !" className="mb-6">
           <p>
-            Votre demande a bien été envoyée. Je vous répondrai dans les plus brefs délais,
-            généralement sous 24 à 48 heures.
+            Le formulaire fonctionne correctement. Une fois connecté à votre API,
+            vos demandes seront réellement envoyées par email.
           </p>
         </InfoBox>
       )}
