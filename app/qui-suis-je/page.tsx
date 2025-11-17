@@ -46,7 +46,7 @@ export default function QuiSuisJePage() {
               <div className="sticky top-24">
                 <div className="aspect-[3/4] rounded-2xl overflow-hidden shadow-medium mb-6">
                   <img
-                    src="/images/placeholder-profile.jpg"
+                    src="/images/profil.png"
                     alt="Dr. Sophie Martin, Psychologue Clinicienne"
                     className="w-full h-full object-cover"
                   />

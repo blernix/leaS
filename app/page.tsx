@@ -32,7 +32,7 @@ export default function HomePage() {
         ctaHref="/prendre-rendez-vous"
         secondaryCtaText="En savoir plus"
         secondaryCtaHref="/qui-suis-je"
-        imageSrc="/images/placeholder-profile.jpg"
+        imageSrc="/images/psychologue.png"
         imageAlt="Dr. Sophie Martin, Psychologue Clinicienne à Lyon"
       />
 
