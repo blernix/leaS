@@ -13,7 +13,7 @@ import { generateMetadata as generatePageMetadata, siteConfig } from '@/lib/seo'
 export const metadata: Metadata = generatePageMetadata({
   title: 'Prendre rendez-vous',
   description:
-    'Contactez Dr. Sophie Martin, psychologue à Lyon 3, pour prendre rendez-vous. Réponse sous 24-48h. Formulaire sécurisé et confidentiel.',
+    'Contactez Léa Sgiaravello, psychologue à Bordeaux, pour prendre rendez-vous. Réponse sous 24-48h. Formulaire sécurisé et confidentiel.',
   path: '/prendre-rendez-vous',
 })
 

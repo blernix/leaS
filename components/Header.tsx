@@ -46,7 +46,7 @@ export default function Header() {
             >
               <div>
                 <span className="text-xl md:text-2xl font-heading font-bold text-primary-500 group-hover:text-primary-600 transition-colors">
-                  Dr. Sophie Martin
+                  Léa Sgiaravello
                 </span>
                 <p className="text-xs md:text-sm text-neutral-600">
                   Psychologue Clinicienne

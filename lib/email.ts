@@ -222,14 +222,14 @@ export async function sendConfirmationEmail(data: ContactFormData) {
 
         <p>En attendant, si vous avez des questions urgentes, n'hésitez pas à me contacter directement par téléphone.</p>
 
-        <p style="margin-top: 30px;">Cordialement,<br><strong>Dr. Sophie Martin</strong><br>Psychologue Clinicienne</p>
+        <p style="margin-top: 30px;">Cordialement,<br><strong>Léa Sgiaravello</strong><br>Psychologue Clinicienne</p>
       </div>
 
       <div class="footer">
         <p>
-          <strong>Dr. Sophie Martin</strong> | Psychologue Clinicienne<br>
-          25 rue de la République, 69003 Lyon<br>
-          Tél : 06 XX XX XX XX | Email : contact@sophiemartin-psy.fr
+          <strong>Léa Sgiaravello</strong> | Psychologue Clinicienne<br>
+          6 rue père louis de Jabrun, 33000 Bordeaux<br>
+          Tél : 07 75 24 85 09 | Email : contact@lea-sgiaravello-psy.fr
         </p>
       </div>
     </body>

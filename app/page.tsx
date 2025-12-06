@@ -16,7 +16,7 @@ import { generateMetadata as generatePageMetadata } from '@/lib/seo'
 export const metadata: Metadata = generatePageMetadata({
   title: 'Accueil',
   description:
-    'Psychologue clinicienne à Lyon 3ème. Accompagnement bienveillant pour anxiété, dépression, thérapie de couple. Consultations adultes, enfants et adolescents. Remboursement Mon Soutien Psy.',
+    'Psychologue clinicienne à Bordeaux. Clinique intégrative (TCC, psychodynamique, thérapie narrative). Accompagnement adultes, jeunes adultes, neurodiversité. Mon Soutien Psy.',
   path: '/',
 })
 
@@ -26,14 +26,14 @@ export default function HomePage() {
       {/* Hero Section */}
       <Hero
         title="Bienvenue dans votre espace de bien-être"
-        subtitle="Dr. Sophie Martin, Psychologue Clinicienne"
-        description="Je vous accompagne avec bienveillance et professionnalisme dans vos difficultés personnelles, relationnelles et émotionnelles."
+        subtitle="Léa Sgiaravello, Psychologue Clinicienne"
+        description="Psychologue clinicienne à Bordeaux, j'exerce une clinique intégrative ancrée dans la psychologie cognitive et comportementale (TCC), la psychodynamique contemporaine et la thérapie narrative."
         ctaText="Prendre rendez-vous"
         ctaHref="/prendre-rendez-vous"
         secondaryCtaText="En savoir plus"
         secondaryCtaHref="/qui-suis-je"
-        imageSrc="/images/psychologue.png"
-        imageAlt="Dr. Sophie Martin, Psychologue Clinicienne à Lyon"
+        imageSrc="/images/cabinet_sgiaravello.webp"
+        imageAlt="Léa Sgiaravello, Psychologue Clinicienne à Bordeaux"
       />
 
       {/* Section Présentation courte */}
@@ -41,18 +41,17 @@ export default function HomePage() {
         <div className="container-custom">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-heading font-bold text-neutral-900 mb-6">
-              Un accompagnement sur mesure pour retrouver votre équilibre
+              Un accompagnement clinique structuré et nuancé
             </h2>
             <div className="space-y-4 text-lg text-neutral-700 leading-relaxed">
               <p>
-                Psychologue clinicienne diplômée, j'exerce en cabinet libéral à Lyon 3ème
-                depuis plus de 10 ans. Ma pratique est fondée sur l'écoute, la bienveillance
-                et le respect de votre rythme.
+                Mon travail consiste à comprendre, avec vous, les mécanismes psychiques, les
+                schémas, les tensions internes et les récits identitaires qui organisent votre vie psychologique.
               </p>
               <p>
-                Formée aux thérapies cognitives et comportementales (TCC) et à l'approche
-                systémique, j'accompagne les adultes, enfants, adolescents et couples dans
-                leurs difficultés émotionnelles et relationnelles.
+                Je propose un espace structuré où l'enjeu n'est pas d'imposer un modèle ou une
+                interprétation, mais de dégager les logiques internes, repérer ce qui se répète, ce qui défend,
+                ce qui rigidifie, et ouvrir des marges de manœuvre.
               </p>
             </div>
 
@@ -89,68 +88,8 @@ export default function HomePage() {
                   />
                 </svg>
               }
-              title="Anxiété & Stress"
-              description="Accompagnement des troubles anxieux, crises d'angoisse, phobies et gestion du stress quotidien."
-            />
-
-            <SpecialtyCard
-              icon={
-                <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
-                  />
-                </svg>
-              }
-              title="Dépression"
-              description="Soutien face aux épisodes dépressifs, perte d'élan vital et difficultés émotionnelles."
-            />
-
-            <SpecialtyCard
-              icon={
-                <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"
-                  />
-                </svg>
-              }
-              title="Thérapie de couple"
-              description="Accompagnement des couples en difficulté, amélioration de la communication et résolution de conflits."
-            />
-
-            <SpecialtyCard
-              icon={
-                <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"
-                  />
-                </svg>
-              }
-              title="Enfants & Adolescents"
-              description="Suivi psychologique adapté aux jeunes : difficultés scolaires, troubles du comportement, émotions."
-            />
-
-            <SpecialtyCard
-              icon={
-                <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M13 10V3L4 14h7v7l9-11h-7z"
-                  />
-                </svg>
-              }
-              title="Événements de vie"
-              description="Soutien lors de transitions difficiles : deuil, séparation, burn-out, reconversion professionnelle."
+              title="Stress, anxiété et surcharge mentale"
+              description="Compréhension des mécanismes anxieux, gestion de la charge cognitive, stratégies d'évitement, hypervigilance, anticipation anxieuse."
             />
 
             <SpecialtyCard
@@ -164,8 +103,68 @@ export default function HomePage() {
                   />
                 </svg>
               }
-              title="Confiance en soi"
-              description="Travail sur l'estime de soi, affirmation de soi et développement personnel."
+              title="Confiance en soi et limites"
+              description="Travail sur l'auto-critique, l'exigence interne, la peur du jugement, les difficultés à poser des limites et la suradaptation relationnelle."
+            />
+
+            <SpecialtyCard
+              icon={
+                <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
+                  />
+                </svg>
+              }
+              title="Relations affectives et attachement"
+              description="Ambivalence, dépendance affective, peur de l'abandon, répétition de schémas relationnels, difficultés à se situer dans le lien."
+            />
+
+            <SpecialtyCard
+              icon={
+                <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"
+                  />
+                </svg>
+              }
+              title="Dynamiques familiales"
+              description="Loyautés invisibles, rôle dans la fratrie, répétitions transgénérationnelles, difficulté à s'extraire de positions figées."
+            />
+
+            <SpecialtyCard
+              icon={
+                <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"
+                  />
+                </svg>
+              }
+              title="Paradoxes internes et conflits psychiques"
+              description="Tensions volonté/peur, autonomie/besoin de lien, contrôle/fatigue du contrôle. Travail clinique centré sur les paradoxes."
+            />
+
+            <SpecialtyCard
+              icon={
+                <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                  />
+                </svg>
+              }
+              title="Émotions intenses et régulation"
+              description="Compréhension des déclencheurs, des cycles émotionnels, des comportements compensatoires, reprise de contrôle progressif avec des outils TCC."
             />
           </div>
 
@@ -285,43 +284,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Section Témoignages */}
-      <section className="section bg-gradient-to-br from-primary-50 to-secondary-50">
-        <div className="container-custom">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-heading font-bold text-neutral-900 mb-4">
-              Ils me font confiance
-            </h2>
-            <p className="text-lg text-neutral-700 max-w-2xl mx-auto">
-              Témoignages de patients (anonymisés et génériques pour respecter la confidentialité)
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
-            <Testimonial
-              content="J'ai trouvé un véritable soutien lors d'une période difficile. L'écoute bienveillante et les outils proposés m'ont permis de retrouver confiance en moi."
-              author="Marie L."
-              role="Patiente"
-              rating={5}
-            />
-
-            <Testimonial
-              content="Excellent accompagnement pour notre couple. Nous avons appris à mieux communiquer et à résoudre nos conflits de manière constructive."
-              author="Thomas et Julie"
-              role="Couple en thérapie"
-              rating={5}
-            />
-
-            <Testimonial
-              content="Ma fille adolescente a trouvé un espace où elle peut s'exprimer librement. Les séances l'ont beaucoup aidée à gérer ses émotions et son stress scolaire."
-              author="Catherine M."
-              role="Parent"
-              rating={5}
-            />
-          </div>
-        </div>
-      </section>
-
       {/* Section Informations pratiques courtes */}
       <section className="section bg-white">
         <div className="container-custom">
@@ -357,14 +319,14 @@ export default function HomePage() {
                   Adresse
                 </h3>
                 <p className="text-neutral-700">
-                  25 rue de la République
+                  6 rue père louis de Jabrun
                   <br />
-                  69003 Lyon
+                  33000 Bordeaux
                 </p>
                 <p className="text-sm text-neutral-600 mt-2">
-                  Métro : Ligne B - Place Guichard
+                  Bordeaux Centre
                   <br />
-                  Accès PMR
+                  Accès PMR non disponible
                 </p>
               </Card>
 
@@ -411,11 +373,12 @@ export default function HomePage() {
                   Tarifs
                 </h3>
                 <ul className="text-neutral-700 space-y-1">
-                  <li>Consultation adulte : 70€</li>
-                  <li>Consultation enfant/ado : 65€</li>
-                  <li>Thérapie de couple : 90€</li>
+                  <li>Hors Mon Soutien Psy : 60€</li>
+                  <li>Avec Mon Soutien Psy : 50€</li>
                 </ul>
-                <p className="text-sm text-neutral-600 mt-2">Durée : 45-50 minutes</p>
+                <p className="text-sm text-neutral-600 mt-2">
+                  1ère séance : 1h | Séances suivantes : 50 min (hors MSP) ou 40 min (MSP)
+                </p>
               </Card>
 
               <Card padding="lg">
@@ -449,9 +412,10 @@ export default function HomePage() {
 
             <InfoBox type="info" className="mt-8">
               <p>
-                <strong>Nouveau dispositif 2025 :</strong> Grâce au programme « Mon Soutien Psy »,
-                vous pouvez bénéficier de <strong>12 séances remboursées par an</strong>, SANS
-                ordonnance préalable. Renseignez-vous lors de votre prise de contact.
+                <strong>Dispositif Mon Soutien Psy :</strong> Bénéficiez de séances remboursées
+                à hauteur de 50€ par séance.
+                <br />
+                <strong>Annulation :</strong> Toute séance non annulée 48h à l'avance sera facturée.
               </p>
             </InfoBox>
 

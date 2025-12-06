@@ -14,7 +14,7 @@ import { generateMetadata as generatePageMetadata } from '@/lib/seo'
 export const metadata: Metadata = generatePageMetadata({
   title: 'Qui suis-je ?',
   description:
-    'Dr. Sophie Martin, psychologue clinicienne diplômée à Lyon. Plus de 10 ans d\'expérience en TCC et thérapie systémique. Découvrez mon parcours et ma philosophie de travail.',
+    'Léa Sgiaravello, psychologue clinicienne à Bordeaux. Clinique intégrative (TCC, psychodynamique, thérapie narrative). Spécialisée en neurodiversité, paradoxes internes, attachement.',
   path: '/qui-suis-je',
 })
 
@@ -32,7 +32,7 @@ export default function QuiSuisJePage() {
             Qui suis-je ?
           </h1>
           <p className="text-xl text-neutral-700 mt-4 max-w-3xl">
-            Psychologue clinicienne engagée dans un accompagnement humain et bienveillant
+            Une clinique intégrative au service de la compréhension de vos mécanismes psychiques
           </p>
         </div>
       </section>
@@ -46,26 +46,31 @@ export default function QuiSuisJePage() {
               <div className="sticky top-24">
                 <div className="aspect-[3/4] rounded-2xl overflow-hidden shadow-medium mb-6">
                   <img
-                    src="/images/profil.png"
-                    alt="Dr. Sophie Martin, Psychologue Clinicienne"
+                    src="/images/profil_sgiaravello.webp"
+                    alt="Léa Sgiaravello, Psychologue Clinicienne"
                     className="w-full h-full object-cover"
                   />
                 </div>
 
                 <Card>
-                  <h3 className="font-semibold text-neutral-900 mb-2">Dr. Sophie Martin</h3>
+                  <h3 className="font-semibold text-neutral-900 mb-2">Léa Sgiaravello</h3>
                   <p className="text-sm text-neutral-600 mb-4">Psychologue Clinicienne</p>
 
                   <div className="text-sm space-y-2 text-neutral-700">
                     <p>
                       <strong>N° ADELI :</strong>
                       <br />
-                      [À REMPLIR]
+                      0779321256
                     </p>
                     <p>
-                      <strong>Diplôme :</strong>
+                      <strong>N° RPPS :</strong>
                       <br />
-                      Master 2 Psychologie Clinique
+                      10009026849
+                    </p>
+                    <p>
+                      <strong>SIRET :</strong>
+                      <br />
+                      989 924 253 00010
                     </p>
                   </div>
                 </Card>
@@ -74,34 +79,39 @@ export default function QuiSuisJePage() {
 
             {/* Contenu textuel */}
             <div className="lg:col-span-2 space-y-8">
-              {/* Présentation */}
+              {/* Présentation clinique */}
               <div>
                 <h2 className="text-3xl font-heading font-bold text-neutral-900 mb-4">
-                  Mon parcours
+                  Présentation
                 </h2>
                 <div className="prose prose-lg max-w-none text-neutral-700 space-y-4">
                   <p>
-                    Titulaire d'un Master 2 en Psychologie Clinique et Psychopathologie de
-                    l'Université Lumière Lyon 2, j'exerce en tant que psychologue clinicienne
-                    depuis plus de 10 ans.
+                    Je suis psychologue clinicienne, diplômée en psychologie avec un parcours complémentaire
+                    en sociologie et en littérature. Ma pratique est intégrative, je propose un accompagnement
+                    basé sur les principes de la thérapie narrative et ceux de la psychodynamique.
                   </p>
                   <p>
-                    Mon parcours professionnel m'a amenée à travailler dans différents contextes :
-                    services hospitaliers de psychiatrie, centre médico-psychologique (CMP), et
-                    depuis 2015, en cabinet libéral à Lyon 3ème.
+                    Mon expérience m'a conduite à travailler auprès de publics variés, notamment en gériatrie
+                    et dans le champ du handicap mental.
                   </p>
                   <p>
-                    Cette diversité d'expériences m'a permis d'accompagner des publics variés
-                    (enfants, adolescents, adultes, couples) et de développer une approche
-                    thérapeutique riche et adaptable aux besoins de chacun.
+                    Aujourd'hui j'accueille des <strong>enfants, des adolescents et des adultes</strong>, y compris
+                    ceux concernés par la neurodiversité (autisme, TDA/H, retard intellectuel, haut potentiel,
+                    hypersensibilité, etc.) en cabinet. Je reçois toute personne ayant un besoin d'accompagnement,
+                    cela peut concerner des troubles de l'humeur, des troubles anxieux, des difficultés relationnelles
+                    ou, tout simplement, une envie d'apprendre à mieux se connaître et se comprendre.
+                  </p>
+                  <p className="text-base italic border-l-4 border-primary-300 pl-4 bg-primary-50 p-3 rounded">
+                    Il peut être stressant de prendre rendez-vous pour la première fois, si cela est le cas,
+                    vous pouvez m'écrire en amont du rendez-vous pour que nous puissions avoir un premier échange.
                   </p>
                 </div>
               </div>
 
-              {/* Formation */}
+              {/* Diplômes et formation */}
               <div>
                 <h2 className="text-3xl font-heading font-bold text-neutral-900 mb-4">
-                  Formation et spécialisations
+                  Diplômes et formation
                 </h2>
                 <div className="space-y-4">
                   <Card hover>
@@ -123,36 +133,10 @@ export default function QuiSuisJePage() {
                       </div>
                       <div>
                         <h3 className="font-semibold text-neutral-900 mb-1">
-                          Master 2 Psychologie Clinique et Psychopathologie
-                        </h3>
-                        <p className="text-sm text-neutral-600">Université Lumière Lyon 2</p>
-                      </div>
-                    </div>
-                  </Card>
-
-                  <Card hover>
-                    <div className="flex items-start gap-4">
-                      <div className="w-12 h-12 rounded-full bg-primary-100 text-primary-500 flex items-center justify-center flex-shrink-0">
-                        <svg
-                          className="w-6 h-6"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth={2}
-                            d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                          />
-                        </svg>
-                      </div>
-                      <div>
-                        <h3 className="font-semibold text-neutral-900 mb-1">
-                          Formation en Thérapies Cognitives et Comportementales (TCC)
+                          Master en psychologie clinique et psychopathologie
                         </h3>
                         <p className="text-sm text-neutral-600">
-                          Association Française de Thérapie Comportementale et Cognitive (AFTCC)
+                          Parcours psychothérapie - Université Paris 8 - Vincennes Saint-Denis
                         </p>
                       </div>
                     </div>
@@ -177,10 +161,10 @@ export default function QuiSuisJePage() {
                       </div>
                       <div>
                         <h3 className="font-semibold text-neutral-900 mb-1">
-                          Formation en Thérapie Systémique et de Couple
+                          Licence de psychologie
                         </h3>
                         <p className="text-sm text-neutral-600">
-                          Institut de Formation et de Thérapie Systémique
+                          Université Paris 8 - Vincennes Saint-Denis
                         </p>
                       </div>
                     </div>
@@ -188,7 +172,7 @@ export default function QuiSuisJePage() {
 
                   <Card hover>
                     <div className="flex items-start gap-4">
-                      <div className="w-12 h-12 rounded-full bg-primary-100 text-primary-500 flex items-center justify-center flex-shrink-0">
+                      <div className="w-12 h-12 rounded-full bg-secondary-100 text-secondary-500 flex items-center justify-center flex-shrink-0">
                         <svg
                           className="w-6 h-6"
                           fill="none"
@@ -199,16 +183,16 @@ export default function QuiSuisJePage() {
                             strokeLinecap="round"
                             strokeLinejoin="round"
                             strokeWidth={2}
-                            d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                            d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"
                           />
                         </svg>
                       </div>
                       <div>
                         <h3 className="font-semibold text-neutral-900 mb-1">
-                          Formation continue en psychotraumatologie et EMDR
+                          Parcours complémentaire
                         </h3>
                         <p className="text-sm text-neutral-600">
-                          En cours de certification
+                          Sociologie et littérature
                         </p>
                       </div>
                     </div>
@@ -216,85 +200,133 @@ export default function QuiSuisJePage() {
                 </div>
               </div>
 
-              {/* Approches thérapeutiques */}
+              {/* Ma manière de travailler */}
               <div>
                 <h2 className="text-3xl font-heading font-bold text-neutral-900 mb-4">
-                  Mes approches thérapeutiques
+                  Ma manière de travailler
                 </h2>
-                <div className="prose prose-lg max-w-none text-neutral-700 space-y-4">
+                <div className="prose prose-lg max-w-none text-neutral-700 space-y-4 mb-6">
                   <p>
-                    Ma pratique s'inscrit dans une approche <strong>intégrative</strong>,
-                    adaptée aux besoins spécifiques de chaque personne. Je m'appuie
-                    principalement sur :
+                    Ma pratique repose sur plusieurs axes :
                   </p>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
+                <div className="space-y-6">
+                  {/* Axe 1 */}
                   <Card>
-                    <h3 className="font-semibold text-neutral-900 mb-2">
-                      Thérapies Cognitives et Comportementales (TCC)
+                    <h3 className="text-lg font-semibold text-neutral-900 mb-3">
+                      1. Analyse des schémas et des mécanismes psychiques
                     </h3>
-                    <p className="text-sm text-neutral-700">
-                      Approche scientifiquement validée qui permet de modifier les pensées et
-                      comportements problématiques à l'origine de souffrances psychologiques.
+                    <p className="text-neutral-700">
+                      Identifier les fonctionnements internes (anticipations anxieuses, exigences internes,
+                      suradaptation, évitements, auto-critique, etc.) et comprendre d'où ils tirent leur force et
+                      comment ils s'articulent entre eux.
                     </p>
                   </Card>
 
+                  {/* Axe 2 */}
                   <Card>
-                    <h3 className="font-semibold text-neutral-900 mb-2">Approche systémique</h3>
-                    <p className="text-sm text-neutral-700">
-                      Particulièrement adaptée à la thérapie de couple et familiale, cette
-                      approche considère les interactions et la dynamique relationnelle.
+                    <h3 className="text-lg font-semibold text-neutral-900 mb-3">
+                      2. Approche TCC
+                    </h3>
+                    <p className="text-neutral-700 mb-3">
+                      Apporter des outils concrets pour :
+                    </p>
+                    <ul className="list-disc pl-6 text-neutral-700 space-y-1">
+                      <li>comprendre les cycles émotionnels,</li>
+                      <li>repérer les pensées automatiques,</li>
+                      <li>modifier les comportements problématiques,</li>
+                      <li>travailler la régulation émotionnelle,</li>
+                      <li>réduire les stratégies d'évitement.</li>
+                    </ul>
+                    <p className="text-neutral-700 mt-3">
+                      L'objectif est d'introduire des leviers d'action sans perdre la profondeur analytique.
                     </p>
                   </Card>
 
+                  {/* Axe 3 */}
                   <Card>
-                    <h3 className="font-semibold text-neutral-900 mb-2">
-                      Psychologie clinique humaniste
+                    <h3 className="text-lg font-semibold text-neutral-900 mb-3">
+                      3. Travail narratif
                     </h3>
-                    <p className="text-sm text-neutral-700">
-                      Une posture d'écoute empathique et bienveillante, centrée sur la personne
-                      et ses ressources.
+                    <p className="text-neutral-700 mb-3">
+                      La thérapie narrative occupe une place importante dans ma pratique :
+                    </p>
+                    <ul className="list-disc pl-6 text-neutral-700 space-y-1">
+                      <li>externaliser les problèmes pour réduire la culpabilité,</li>
+                      <li>observer les récits dominants (ex. : « je dois toujours... », « je ne suis pas assez... »),</li>
+                      <li>mettre au jour les récits alternatifs,</li>
+                      <li>analyser la manière dont la personne raconte les événements.</li>
+                    </ul>
+                    <p className="text-neutral-700 mt-3">
+                      Ce travail permet d'assouplir l'identité, de sortir de positions figées et de redevenir auteur
+                      de son histoire.
                     </p>
                   </Card>
 
+                  {/* Axe 4 */}
                   <Card>
-                    <h3 className="font-semibold text-neutral-900 mb-2">
-                      Psychotraumatologie et EMDR
+                    <h3 className="text-lg font-semibold text-neutral-900 mb-3">
+                      4. Analyse du paradoxe et des tensions internes
                     </h3>
-                    <p className="text-sm text-neutral-700">
-                      Prise en charge spécifique des traumatismes psychiques (ESPT, événements
-                      traumatiques).
+                    <p className="text-neutral-700 mb-3">
+                      Une part importante du travail se concentre sur les zones de contradiction :
+                    </p>
+                    <ul className="list-disc pl-6 text-neutral-700 space-y-1">
+                      <li>volonté/peur,</li>
+                      <li>dépendance/indépendance,</li>
+                      <li>désir de contrôle / fatigue du contrôle,</li>
+                      <li>autonomie / besoin de lien.</li>
+                    </ul>
+                    <p className="text-neutral-700 mt-3">
+                      Ces paradoxes ne sont jamais des "incohérences", mais des organisations psychiques
+                      compréhensibles, que nous explorons.
+                    </p>
+                  </Card>
+
+                  {/* Axe 5 */}
+                  <Card>
+                    <h3 className="text-lg font-semibold text-neutral-900 mb-3">
+                      5. Co-construction et expertise du patient
+                    </h3>
+                    <p className="text-neutral-700">
+                      Ma clinique est collaborative :
+                      le patient est l'expert de sa vie, et ma fonction est de proposer des hypothèses, une
+                      structuration, et un regard méthodique.
+                      Nous avançons ensemble, en déplaçant progressivement le regard porté sur les expériences,
+                      les émotions et les choix.
                     </p>
                   </Card>
                 </div>
               </div>
 
-              {/* Valeurs et philosophie */}
+              {/* Résumé de l'approche */}
               <div>
                 <h2 className="text-3xl font-heading font-bold text-neutral-900 mb-4">
-                  Ma philosophie de travail
+                  En résumé, mon approche clinique
                 </h2>
-                <div className="prose prose-lg max-w-none text-neutral-700 space-y-4">
-                  <p>
-                    Je crois profondément que chaque personne possède en elle les ressources
-                    nécessaires pour faire face aux difficultés de la vie. Mon rôle est de vous
-                    accompagner pour les révéler et les mobiliser.
-                  </p>
-                  <p>
-                    Dans mon cabinet, vous trouverez un espace sécurisé, sans jugement, où vous
-                    pourrez vous exprimer librement. Je m'engage à :
-                  </p>
-                  <ul className="list-disc pl-6 space-y-2">
-                    <li>Respecter votre rythme et vos besoins</li>
-                    <li>Garantir la confidentialité de nos échanges</li>
-                    <li>Adapter mes outils thérapeutiques à votre situation unique</li>
-                    <li>
-                      Travailler en collaboration avec vous vers des objectifs que nous définirons
-                      ensemble
-                    </li>
-                    <li>Me former continuellement pour vous offrir un accompagnement de qualité</li>
-                  </ul>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <Card>
+                    <p className="text-neutral-700">• intégrative (TCC + psychodynamique + narrative)</p>
+                  </Card>
+                  <Card>
+                    <p className="text-neutral-700">• analytique mais concrète</p>
+                  </Card>
+                  <Card>
+                    <p className="text-neutral-700">• centrée sur la compréhension des mécanismes internes</p>
+                  </Card>
+                  <Card>
+                    <p className="text-neutral-700">• orientée vers la nuance, la lucidité et la capacité de choix</p>
+                  </Card>
+                  <Card>
+                    <p className="text-neutral-700">• construite avec le patient, jamais sur lui</p>
+                  </Card>
+                  <Card>
+                    <p className="text-neutral-700">• structurée mais non infantilisante</p>
+                  </Card>
+                  <Card>
+                    <p className="text-neutral-700">• attentive aux récits, aux paradoxes et aux répétitions</p>
+                  </Card>
                 </div>
               </div>
 

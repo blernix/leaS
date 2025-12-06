@@ -11,7 +11,7 @@ import { generateMetadata as generatePageMetadata, siteConfig } from '@/lib/seo'
 
 export const metadata: Metadata = generatePageMetadata({
   title: 'Mentions légales',
-  description: 'Mentions légales du cabinet de psychologie Dr. Sophie Martin à Lyon.',
+  description: 'Mentions légales du cabinet de psychologie Léa Sgiaravello à Bordeaux.',
   path: '/mentions-legales',
 })
 
@@ -95,20 +95,39 @@ export default function MentionsLegalesPage() {
               <h2 className="text-2xl font-heading font-bold text-neutral-900 mb-4">
                 3. Hébergement du site
               </h2>
-              <div className="space-y-2 text-neutral-700">
-                <p>
-                  <strong>Hébergeur :</strong> [NOM DE L'HÉBERGEUR À REMPLIR]
-                </p>
-                <p>
-                  <strong>Adresse :</strong> [ADRESSE DE L'HÉBERGEUR À REMPLIR]
-                </p>
-                <p>
-                  <strong>Site web :</strong> [URL DE L'HÉBERGEUR À REMPLIR]
-                </p>
-                <p className="text-sm text-neutral-600 mt-4">
-                  Exemples d'hébergeurs couramment utilisés : Vercel (vercel.com), Netlify
-                  (netlify.com), OVH (ovhcloud.com), etc.
-                </p>
+              <div className="space-y-4 text-neutral-700">
+                <div>
+                  <p className="font-semibold mb-2">Le site est hébergé sur un serveur privé virtuel (VPS) opéré par :</p>
+                  <p><strong>Killian Lecrut</strong></p>
+                  <p>Adresse : 12 place saint jean, Melun</p>
+                  <p>SIRET : 92289316900016</p>
+                  <p>
+                    Contact :{' '}
+                    <a
+                      href="mailto:killian.lecrut@gmail.com"
+                      className="text-primary-500 hover:text-primary-600 underline"
+                    >
+                      killian.lecrut@gmail.com
+                    </a>
+                  </p>
+                </div>
+
+                <div>
+                  <p className="font-semibold mb-2">L'infrastructure physique du serveur est fournie par :</p>
+                  <p><strong>Hostinger International Ltd.</strong></p>
+                  <p>Adresse : 61 Lordou Vironos Street, 6023 Larnaca, Chypre</p>
+                  <p>
+                    Contact :{' '}
+                    <a
+                      href="https://www.hostinger.fr/contact"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-primary-500 hover:text-primary-600 underline"
+                    >
+                      https://www.hostinger.fr/contact
+                    </a>
+                  </p>
+                </div>
               </div>
             </Card>
 

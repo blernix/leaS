@@ -14,7 +14,7 @@ import { generateMetadata as generatePageMetadata, siteConfig } from '@/lib/seo'
 export const metadata: Metadata = generatePageMetadata({
   title: 'Politique de confidentialité et RGPD',
   description:
-    'Politique de protection des données personnelles et de confidentialité conforme au RGPD pour le cabinet Dr. Sophie Martin.',
+    'Politique de protection des données personnelles et de confidentialité conforme au RGPD pour le cabinet Léa Sgiaravello.',
   path: '/politique-confidentialite',
 })
 

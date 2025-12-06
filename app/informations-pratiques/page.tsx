@@ -15,7 +15,7 @@ import { generateMetadata as generatePageMetadata, siteConfig } from '@/lib/seo'
 export const metadata: Metadata = generatePageMetadata({
   title: 'Informations pratiques',
   description:
-    'Cabinet de psychologie à Lyon 3. Horaires, tarifs, remboursements Mon Soutien Psy, accès et parking. Consultations sur rendez-vous.',
+    'Cabinet de psychologie à Bordeaux. Horaires, tarifs, remboursements Mon Soutien Psy, accès. Consultations sur rendez-vous. Annulation 48h.',
   path: '/informations-pratiques',
 })
 
@@ -68,7 +68,7 @@ export default function InformationsPratiquesPage() {
                     Adresse du cabinet
                   </h2>
                   <address className="not-italic text-neutral-700 space-y-2">
-                    <p className="font-semibold">Cabinet Dr. Sophie Martin</p>
+                    <p className="font-semibold">Cabinet Léa Sgiaravello</p>
                     <p>{siteConfig.professional.address.street}</p>
                     <p>
                       {siteConfig.professional.address.postalCode}{' '}
@@ -99,7 +99,7 @@ export default function InformationsPratiquesPage() {
                   <div className="space-y-2 text-neutral-700">
                     <div className="flex justify-between">
                       <span className="font-medium">Lundi - Vendredi :</span>
-                      <span>9h00 - 19h00</span>
+                      <span>10h00 - 19h00</span>
                     </div>
                     <div className="flex justify-between text-neutral-500">
                       <span className="font-medium">Samedi - Dimanche :</span>
@@ -107,8 +107,6 @@ export default function InformationsPratiquesPage() {
                     </div>
                     <p className="text-sm text-neutral-600 mt-4">
                       <strong>Sur rendez-vous uniquement</strong>
-                      <br />
-                      Pause déjeuner : 12h30 - 14h00
                     </p>
                   </div>
                 </div>
@@ -176,23 +174,24 @@ export default function InformationsPratiquesPage() {
                   <h2 className="text-2xl font-heading font-bold text-neutral-900 mb-3">
                     Accès et transports
                   </h2>
-                  <div className="space-y-2 text-neutral-700 text-sm">
+                  <div className="space-y-3 text-neutral-700 text-sm">
                     <div>
-                      <p className="font-medium text-neutral-900">Métro :</p>
-                      <p>Ligne B - Arrêt Place Guichard (5 min à pied)</p>
+                      <p className="font-medium text-neutral-900 mb-1">Tramway :</p>
+                      <p>• Ligne B - Arrêt Gambetta</p>
+                      <p>• Lignes A et B - Arrêt Hôtel de Ville</p>
                     </div>
                     <div>
-                      <p className="font-medium text-neutral-900">Bus :</p>
-                      <p>Lignes C3, C13, C16 - Arrêt Lacassagne</p>
+                      <p className="font-medium text-neutral-900 mb-1">Bus :</p>
+                      <p>Lignes 15, 3, 2 et 26 - Arrêt Gambetta</p>
                     </div>
                     <div>
-                      <p className="font-medium text-neutral-900">Parking :</p>
-                      <p>Parking public Place Guichard</p>
+                      <p className="font-medium text-neutral-900 mb-1">Parking :</p>
+                      <p>Parking Saint-Christoly (15 Place Pey Berland)</p>
                     </div>
                     <div>
-                      <p className="font-medium text-neutral-900">Accessibilité :</p>
-                      <p>✓ Accès PMR (personnes à mobilité réduite)</p>
-                      <p>✓ Ascenseur disponible</p>
+                      <p className="font-medium text-neutral-900 mb-1">Accessibilité :</p>
+                      <p className="text-green-600">✓ Rez-de-chaussée</p>
+                      <p className="text-green-600">✓ Entrée accessible</p>
                     </div>
                   </div>
                 </div>
@@ -207,8 +206,8 @@ export default function InformationsPratiquesPage() {
             </h2>
             <div className="max-w-4xl mx-auto rounded-2xl overflow-hidden shadow-large">
               <img
-                src="/images/cabinet.png"
-                alt="Cabinet de psychologie Dr. Sophie Martin à Lyon 3"
+                src="/images/cabinet_sgiaravello.webp"
+                alt="Cabinet de psychologie Léa Sgiaravello à Bordeaux"
                 className="w-full h-auto object-cover"
               />
             </div>
@@ -219,7 +218,7 @@ export default function InformationsPratiquesPage() {
             <h2 className="text-3xl font-heading font-bold text-neutral-900 mb-6 text-center">
               Localisation
             </h2>
-            <Map address={address} title="Localisation du cabinet Dr. Sophie Martin" />
+            <Map address={address} title="Localisation du cabinet Léa Sgiaravello" />
           </div>
         </div>
       </section>
@@ -235,49 +234,44 @@ export default function InformationsPratiquesPage() {
               Les tarifs indiqués sont ceux pratiqués en 2025
             </p>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8 max-w-3xl mx-auto">
               <Card hover className="text-center">
-                <div className="text-4xl mb-4">👤</div>
+                <div className="text-4xl mb-4">💼</div>
                 <h3 className="text-xl font-semibold text-neutral-900 mb-2">
-                  Consultation adulte
+                  Hors Mon Soutien Psy
                 </h3>
-                <p className="text-3xl font-bold text-primary-500 mb-2">70€</p>
-                <p className="text-sm text-neutral-600">Durée : 45-50 minutes</p>
+                <p className="text-3xl font-bold text-primary-500 mb-2">60€</p>
+                <p className="text-sm text-neutral-600">1ère séance : 1h</p>
+                <p className="text-sm text-neutral-600">Séances suivantes : 50 min</p>
               </Card>
 
-              <Card hover className="text-center">
-                <div className="text-4xl mb-4">🧒</div>
+              <Card hover className="text-center bg-primary-50 border-2 border-primary-200">
+                <div className="text-4xl mb-4">✅</div>
                 <h3 className="text-xl font-semibold text-neutral-900 mb-2">
-                  Enfant / Adolescent
+                  Avec Mon Soutien Psy
                 </h3>
-                <p className="text-3xl font-bold text-primary-500 mb-2">65€</p>
-                <p className="text-sm text-neutral-600">Durée : 45-50 minutes</p>
-              </Card>
-
-              <Card hover className="text-center">
-                <div className="text-4xl mb-4">💑</div>
-                <h3 className="text-xl font-semibold text-neutral-900 mb-2">
-                  Thérapie de couple
-                </h3>
-                <p className="text-3xl font-bold text-primary-500 mb-2">90€</p>
-                <p className="text-sm text-neutral-600">Durée : 60 minutes</p>
+                <p className="text-3xl font-bold text-primary-500 mb-2">50€</p>
+                <p className="text-sm text-neutral-600">Durée : 40 minutes</p>
+                <p className="text-sm text-green-600 font-medium mt-2">Remboursé par l'Assurance Maladie</p>
               </Card>
             </div>
 
             <InfoBox type="info" className="mb-6">
               <h3 className="font-semibold mb-2">Modalités de paiement</h3>
               <p className="text-sm">
-                Le règlement s'effectue à la fin de chaque séance par chèque, espèces ou
-                virement bancaire. Une facture vous sera remise pour vos éventuels
-                remboursements.
+                Le règlement s'effectue à la fin de chaque séance par <strong>chèque ou espèces</strong>.
+                Une facture vous sera remise pour vos éventuels remboursements.
+              </p>
+              <p className="text-sm mt-2 text-orange-600">
+                ⚠️ Cartes bancaires non acceptées
               </p>
             </InfoBox>
 
             <InfoBox type="warning">
               <h3 className="font-semibold mb-2">Politique d'annulation</h3>
               <p className="text-sm">
-                En cas d'empêchement, merci de prévenir au moins <strong>24 heures à
-                l'avance</strong>. Toute séance non annulée dans ce délai sera due.
+                En cas d'empêchement, merci de prévenir au moins <strong>48 heures à
+                l'avance</strong>. Toute séance non annulée dans ce délai sera facturée.
               </p>
             </InfoBox>
           </div>

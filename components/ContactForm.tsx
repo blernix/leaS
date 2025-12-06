@@ -32,48 +32,73 @@ export default function ContactForm() {
     setSubmitStatus('loading')
     setErrorMessage('')
 
-    // Simulation d'envoi (le vrai envoi se fera via votre microservice)
-    setTimeout(() => {
+    try {
+      // Formater le message avec toutes les informations du formulaire
+      const consultationTypes: Record<string, string> = {
+        'première-consultation': 'Première consultation',
+        'suivi-adulte': 'Suivi adulte',
+        'enfant-adolescent': 'Enfant / Adolescent',
+        'couple': 'Thérapie de couple',
+        'autre': 'Autre',
+      }
+
+      const fullMessage = `
+Nouvelle demande de contact
+
+Nom complet : ${data.firstName} ${data.lastName}
+Téléphone : ${data.phone}
+Type de consultation : ${consultationTypes[data.consultationType] || data.consultationType}
+
+Message :
+${data.message}
+      `.trim()
+
+      // Appel à l'API emailpro (URL définie dans .env.local ou .env.production)
+      const apiUrl = process.env.NEXT_PUBLIC_EMAILPRO_API_URL || 'http://localhost:3001'
+      const apiKey = process.env.NEXT_PUBLIC_EMAILPRO_API_KEY || 'fc8e5449-3ea0-40a7-9dcf-35bed680a4c6'
+
+      const response = await fetch(`${apiUrl}/api/v1/send-email`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Authorization': `Bearer ${apiKey}`,
+        },
+        body: JSON.stringify({
+          subject: `Nouvelle demande de contact - ${data.firstName} ${data.lastName}`,
+          message: fullMessage,
+          replyTo: data.email,
+          senderName: `${data.firstName} ${data.lastName}`,
+          metadata: {
+            formType: 'contact',
+            consultationType: data.consultationType,
+          },
+        }),
+      })
+
+      const result = await response.json()
+
+      if (!response.ok || !result.success) {
+        throw new Error(result.error || 'Erreur lors de l\'envoi')
+      }
+
       setSubmitStatus('success')
       reset()
-    }, 1500)
-
-    // NOTE TECHNIQUE :
-    // Ce formulaire est actuellement en mode DEMO
-    // Pour activer l'envoi réel, connectez-le à votre microservice :
-    //
-    // try {
-    //   const response = await fetch('https://votre-api.com/contact', {
-    //     method: 'POST',
-    //     headers: { 'Content-Type': 'application/json' },
-    //     body: JSON.stringify(data),
-    //   })
-    //   if (!response.ok) throw new Error('Erreur')
-    //   setSubmitStatus('success')
-    //   reset()
-    // } catch (error) {
-    //   setSubmitStatus('error')
-    //   setErrorMessage('Une erreur est survenue.')
-    // }
+    } catch (error: any) {
+      console.error('Erreur lors de l\'envoi:', error)
+      setSubmitStatus('error')
+      setErrorMessage(
+        error.message || 'Une erreur est survenue lors de l\'envoi de votre message. Veuillez réessayer.'
+      )
+    }
   }
 
   return (
     <div>
-      {/* Mode DEMO - Information */}
-      <InfoBox type="info" title="Mode démonstration" className="mb-6">
-        <p className="text-sm">
-          <strong>Ce formulaire est actuellement en mode démonstration.</strong><br />
-          Les données ne sont pas réellement envoyées. Pour activer l'envoi,
-          connectez le formulaire à votre microservice d'envoi d'emails.
-        </p>
-      </InfoBox>
-
       {/* Message de succès */}
       {submitStatus === 'success' && (
-        <InfoBox type="success" title="Démonstration réussie !" className="mb-6">
+        <InfoBox type="success" title="Message envoyé avec succès !" className="mb-6">
           <p>
-            Le formulaire fonctionne correctement. Une fois connecté à votre API,
-            vos demandes seront réellement envoyées par email.
+            Votre demande de contact a bien été envoyée. Vous recevrez une réponse dans les plus brefs délais, généralement sous 24 à 48 heures.
           </p>
         </InfoBox>
       )}

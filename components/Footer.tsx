@@ -15,11 +15,11 @@ export default function Footer() {
           {/* Colonne 1 : À propos */}
           <div>
             <h2 className="text-lg font-heading font-semibold text-white mb-4">
-              Dr. Sophie Martin
+              Léa Sgiaravello
             </h2>
             <p className="text-sm text-neutral-300 mb-4">
-              Psychologue clinicienne diplômée, je vous accompagne avec bienveillance
-              dans vos difficultés personnelles, relationnelles et émotionnelles.
+              Psychologue clinicienne à Bordeaux. Clinique intégrative (TCC, psychodynamique,
+              thérapie narrative). J'accueille enfants, adolescents et adultes.
             </p>
             <p className="text-xs text-neutral-400">
               N° ADELI : {siteConfig.professional.adeli}
@@ -115,7 +115,7 @@ export default function Footer() {
               Horaires
             </h2>
             <div className="text-sm space-y-1 mb-6">
-              <p>Lundi - Vendredi : 9h00 - 19h00</p>
+              <p>Lundi - Vendredi : 10h00 - 19h00</p>
               <p className="text-neutral-400">Samedi - Dimanche : Fermé</p>
               <p className="text-xs text-neutral-400 mt-2">Sur rendez-vous uniquement</p>
             </div>
@@ -144,7 +144,7 @@ export default function Footer() {
         <div className="mt-12 pt-8 border-t border-neutral-700">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-neutral-400">
             <p>
-              © {currentYear} Dr. Sophie Martin - Psychologue. Tous droits réservés.
+              © {currentYear} Léa Sgiaravello - Psychologue. Tous droits réservés.
             </p>
             <p className="text-xs">
               Site conforme RGPD • Accessible WCAG 2.1 AA

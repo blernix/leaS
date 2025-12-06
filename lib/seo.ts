@@ -6,26 +6,27 @@ import { Metadata } from 'next'
 
 // Informations du site (à personnaliser)
 export const siteConfig = {
-  name: 'Dr. Sophie Martin',
-  title: 'Psychologue à Lyon 3 | Dr. Sophie Martin',
-  description: 'Psychologue clinicienne à Lyon 3ème. Accompagnement bienveillant pour anxiété, dépression, thérapie de couple. Consultations adultes, enfants et adolescents. Remboursement Mon Soutien Psy.',
-  url: process.env.NEXT_PUBLIC_SITE_URL || 'https://sophiemartin-psy.fr',
+  name: 'Léa Sgiaravello',
+  title: 'Psychologue à Bordeaux | Léa Sgiaravello',
+  description: 'Psychologue clinicienne à Bordeaux. Clinique intégrative (TCC, psychodynamique, thérapie narrative). Accompagnement adultes, jeunes adultes, neurodiversité. Mon Soutien Psy.',
+  url: process.env.NEXT_PUBLIC_SITE_URL || 'https://lea-sgiaravello-psy.fr',
   locale: 'fr_FR',
-  author: 'Dr. Sophie Martin',
+  author: 'Léa Sgiaravello',
 
   // Coordonnées professionnelles
   professional: {
-    name: 'Dr. Sophie Martin',
+    name: 'Léa Sgiaravello',
     title: 'Psychologue Clinicienne',
-    adeli: '[NUMÉRO ADELI À REMPLIR]',
-    siret: '[NUMÉRO SIRET À REMPLIR]',
-    email: 'contact@sophiemartin-psy.fr',
-    phone: '06 XX XX XX XX',
+    adeli: '0779321256',
+    siret: '989 924 253 00010',
+    rpps: '10009026849',
+    email: 'contact@lea-sgiaravello-psy.fr',
+    phone: '07 75 24 85 09',
     address: {
-      street: '25 rue de la République',
-      postalCode: '69003',
-      city: 'Lyon',
-      region: 'Auvergne-Rhône-Alpes',
+      street: '6 rue père louis de Jabrun',
+      postalCode: '33000',
+      city: 'Bordeaux',
+      region: 'Nouvelle-Aquitaine',
       country: 'FR'
     }
   },
@@ -61,17 +62,19 @@ export function generateMetadata({
     authors: [{ name: siteConfig.author }],
     creator: siteConfig.author,
     keywords: [
-      'psychologue Lyon',
-      'psychologue Lyon 3',
-      'thérapie Lyon',
+      'psychologue Bordeaux',
+      'psychologue Bordeaux centre',
+      'thérapie Bordeaux',
       'consultation psychologique',
       'anxiété',
-      'dépression',
-      'thérapie de couple',
-      'psychologue enfants',
-      'psychologue adolescents',
-      'TCC',
-      'thérapie cognitive',
+      'stress',
+      'confiance en soi',
+      'TCC Bordeaux',
+      'thérapie cognitive comportementale',
+      'thérapie narrative',
+      'neurodiversité',
+      'TDAH',
+      'HPI',
       'Mon Soutien Psy',
       'remboursement psychologue',
     ],
@@ -138,22 +141,22 @@ export function generateLocalBusinessSchema() {
     },
     geo: {
       '@type': 'GeoCoordinates',
-      // Coordonnées approximatives de Lyon 3ème (à ajuster)
-      latitude: 45.7578,
-      longitude: 4.8351,
+      // Coordonnées de Bordeaux centre (6 rue père louis de Jabrun)
+      latitude: 44.8378,
+      longitude: -0.5792,
     },
     openingHoursSpecification: [
       {
         '@type': 'OpeningHoursSpecification',
         dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
-        opens: '09:00',
+        opens: '10:00',
         closes: '19:00',
       },
     ],
     areaServed: {
       '@type': 'City',
-      name: 'Lyon',
-      '@id': 'https://www.wikidata.org/wiki/Q456',
+      name: 'Bordeaux',
+      '@id': 'https://www.wikidata.org/wiki/Q1479',
     },
     sameAs: Object.values(siteConfig.social).filter(Boolean),
   }
