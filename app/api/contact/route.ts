@@ -5,7 +5,7 @@
 
 import { NextRequest, NextResponse } from 'next/server'
 import { contactFormSchema } from '@/lib/validation'
-import { sendContactEmail, sendConfirmationEmail } from '@/lib/email'
+import { sendContactEmail } from '@/lib/email'
 
 export async function POST(request: NextRequest) {
   try {

@@ -5,7 +5,6 @@
  */
 
 import { Metadata } from 'next'
-import Link from 'next/link'
 import Breadcrumb from '@/components/Breadcrumb'
 import Card from '@/components/Card'
 import InfoBox from '@/components/InfoBox'

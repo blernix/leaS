@@ -86,12 +86,11 @@ ${data.message}
       setSubmitStatus('success')
       setIsToastOpen(true)
       reset()
-    } catch (error: any) {
+    } catch (error: unknown) {
       console.error('Erreur lors de l\'envoi:', error)
       setSubmitStatus('error')
-      setErrorMessage(
-        error.message || 'Une erreur est survenue lors de l\'envoi de votre message. Veuillez réessayer.'
-      )
+      const message = error instanceof Error ? error.message : 'Une erreur est survenue lors de l\'envoi de votre message. Veuillez réessayer.'
+      setErrorMessage(message)
       setIsToastOpen(true)
     }
   }
