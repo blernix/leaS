@@ -199,20 +199,6 @@ export default function InformationsPratiquesPage() {
             </Card>
           </div>
 
-          {/* Photo du cabinet */}
-          <div className="mb-12">
-            <h2 className="text-3xl font-heading font-bold text-neutral-900 mb-6 text-center">
-              Le cabinet
-            </h2>
-            <div className="max-w-4xl mx-auto rounded-2xl overflow-hidden shadow-large">
-              <img
-                src="/images/cabinet_sgiaravello.webp"
-                alt="Cabinet de psychologie Léa Sgiaravello à Bordeaux"
-                className="w-full h-auto object-cover"
-              />
-            </div>
-          </div>
-
           {/* Carte Google Maps */}
           <div className="mb-12">
             <h2 className="text-3xl font-heading font-bold text-neutral-900 mb-6 text-center">

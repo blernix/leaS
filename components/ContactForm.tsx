@@ -11,6 +11,7 @@ import { zodResolver } from '@hookform/resolvers/zod'
 import { contactFormSchema, type ContactFormData } from '@/lib/validation'
 import { Button } from './Button'
 import InfoBox from './InfoBox'
+import Toast from './Toast'
 import Link from 'next/link'
 
 export default function ContactForm() {
@@ -18,6 +19,7 @@ export default function ContactForm() {
     'idle' | 'loading' | 'success' | 'error'
   >('idle')
   const [errorMessage, setErrorMessage] = useState('')
+  const [isToastOpen, setIsToastOpen] = useState(false)
 
   const {
     register,
@@ -82,6 +84,7 @@ ${data.message}
       }
 
       setSubmitStatus('success')
+      setIsToastOpen(true)
       reset()
     } catch (error: any) {
       console.error('Erreur lors de l\'envoi:', error)
@@ -89,26 +92,30 @@ ${data.message}
       setErrorMessage(
         error.message || 'Une erreur est survenue lors de l\'envoi de votre message. Veuillez réessayer.'
       )
+      setIsToastOpen(true)
     }
   }
 
   return (
     <div>
-      {/* Message de succès */}
-      {submitStatus === 'success' && (
-        <InfoBox type="success" title="Message envoyé avec succès !" className="mb-6">
-          <p>
-            Votre demande de contact a bien été envoyée. Vous recevrez une réponse dans les plus brefs délais, généralement sous 24 à 48 heures.
-          </p>
-        </InfoBox>
-      )}
-
-      {/* Message d'erreur */}
-      {submitStatus === 'error' && (
-        <InfoBox type="error" title="Erreur" className="mb-6">
-          <p>{errorMessage}</p>
-        </InfoBox>
-      )}
+      {/* Toast pour les notifications de succès et d'erreur */}
+      <Toast
+        type={submitStatus === 'success' ? 'success' : 'error'}
+        title={submitStatus === 'success' ? 'Message envoyé avec succès !' : 'Erreur d\'envoi'}
+        message={
+          submitStatus === 'success'
+            ? 'Votre demande de contact a bien été envoyée. Vous recevrez une réponse dans les plus brefs délais, généralement sous 24 à 48 heures.'
+            : errorMessage
+        }
+        isOpen={isToastOpen}
+        onClose={() => {
+          setIsToastOpen(false)
+          if (submitStatus === 'success') {
+            setSubmitStatus('idle')
+          }
+        }}
+        autoCloseDuration={submitStatus === 'success' ? 5000 : 0}
+      />
 
       <form onSubmit={handleSubmit(onSubmit)} noValidate>
         {/* Grille pour prénom et nom */}

@@ -20,7 +20,7 @@ export const siteConfig = {
     adeli: '0779321256',
     siret: '989 924 253 00010',
     rpps: '10009026849',
-    email: 'contact@lea-sgiaravello-psy.fr',
+    email: 'lea.sgiaravello@hotmail.fr',
     phone: '07 75 24 85 09',
     address: {
       street: '6 rue père louis de Jabrun',

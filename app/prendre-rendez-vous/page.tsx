@@ -78,14 +78,6 @@ export default function PrendreRendezVousPage() {
                 </div>
               </Card>
 
-              <InfoBox type="info">
-                <h4 className="font-semibold mb-2 text-sm">Doctolib (bientôt disponible)</h4>
-                <p className="text-sm">
-                  La prise de rendez-vous en ligne via Doctolib sera prochainement disponible
-                  pour plus de flexibilité.
-                </p>
-              </InfoBox>
-
               <Card>
                 <h3 className="font-semibold text-neutral-900 mb-3">
                   Première consultation

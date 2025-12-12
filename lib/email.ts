@@ -229,7 +229,7 @@ export async function sendConfirmationEmail(data: ContactFormData) {
         <p>
           <strong>Léa Sgiaravello</strong> | Psychologue Clinicienne<br>
           6 rue père louis de Jabrun, 33000 Bordeaux<br>
-          Tél : 07 75 24 85 09 | Email : contact@lea-sgiaravello-psy.fr
+          Tél : 07 75 24 85 09 | Email : lea.sgiaravello@hotmail.fr
         </p>
       </div>
     </body>
