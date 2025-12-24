@@ -39,8 +39,7 @@ export default function ContactForm() {
       const consultationTypes: Record<string, string> = {
         'première-consultation': 'Première consultation',
         'suivi-adulte': 'Suivi adulte',
-        'enfant-adolescent': 'Enfant / Adolescent',
-        'couple': 'Thérapie de couple',
+        'adolescent': 'Adolescent (16 ans et +)',
         'autre': 'Autre',
       }
 
@@ -230,8 +229,7 @@ ${data.message}
             <option value="">-- Sélectionnez --</option>
             <option value="première-consultation">Première consultation</option>
             <option value="suivi-adulte">Suivi adulte</option>
-            <option value="enfant-adolescent">Enfant / Adolescent</option>
-            <option value="couple">Thérapie de couple</option>
+            <option value="adolescent">Adolescent (16 ans et +)</option>
             <option value="autre">Autre</option>
           </select>
           {errors.consultationType && (

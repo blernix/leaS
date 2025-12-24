@@ -7,6 +7,5 @@ Allow: /
 # Bloquer l'indexation de certains fichiers (optionnel)
 Disallow: /api/
 
-# Sitemap (Next.js génère automatiquement le sitemap)
-# Décommenter et adapter l'URL après déploiement :
-# Sitemap: https://votre-site.fr/sitemap.xml
+# Sitemap
+Sitemap: https://lea-sgiaravello.fr/sitemap.xml

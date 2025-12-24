@@ -77,9 +77,7 @@ export const metadata: Metadata = {
     },
   },
   verification: {
-    // À ajouter après création des comptes
-    // google: 'VOTRE_CODE_VERIFICATION_GOOGLE',
-    // bing: 'VOTRE_CODE_VERIFICATION_BING',
+    google: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION,
   },
 }
 

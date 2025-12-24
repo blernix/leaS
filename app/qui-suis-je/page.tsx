@@ -95,7 +95,7 @@ export default function QuiSuisJePage() {
                     et dans le champ du handicap mental.
                   </p>
                   <p>
-                    Aujourd'hui j'accueille des <strong>enfants, des adolescents et des adultes</strong>, y compris
+                    Aujourd'hui j'accueille des <strong>adolescents à partir de 16 ans et des adultes</strong>, y compris
                     ceux concernés par la neurodiversité (autisme, TDA/H, retard intellectuel, haut potentiel,
                     hypersensibilité, etc.) en cabinet. Je reçois toute personne ayant un besoin d'accompagnement,
                     cela peut concerner des troubles de l'humeur, des troubles anxieux, des difficultés relationnelles

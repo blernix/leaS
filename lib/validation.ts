@@ -32,8 +32,7 @@ export const contactFormSchema = z.object({
     [
       'première-consultation',
       'suivi-adulte',
-      'enfant-adolescent',
-      'couple',
+      'adolescent',
       'autre',
     ],
     {

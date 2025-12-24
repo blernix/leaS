@@ -52,7 +52,7 @@ const faqs = [
       {
         question: 'Combien coûte une séance ?',
         answer:
-          '**Tarifs 2025 :**\n- Consultation adulte : **70€**\n- Consultation enfant/adolescent : **65€**\n- Thérapie de couple : **90€**\n\nDurée : 45-50 minutes (60 minutes pour les couples)\n\nLe règlement s\'effectue à la fin de chaque séance (chèque, espèces ou virement). Une facture vous sera remise.',
+          '**Tarifs :**\n- Hors Mon Soutien Psy : **60€**\n- Avec Mon Soutien Psy : **50€**\n\nDurée : 1h pour la 1ère séance, puis 50 min (hors MSP) ou 40 min (avec MSP)\n\nLe règlement s\'effectue à la fin de chaque séance (chèque, espèces ou virement). Une facture vous sera remise.',
       },
       {
         question: 'Suis-je remboursé(e) par la Sécurité sociale ou ma mutuelle ?',
@@ -97,12 +97,7 @@ const faqs = [
       {
         question: 'À partir de quel âge peut-on consulter un psychologue ?',
         answer:
-          'J\'accueille les **enfants à partir de 6 ans**, les **adolescents** et les **adultes** (sans limite d\'âge).\n\n**Pour les enfants** (6-12 ans) : approche ludique adaptée (jeu, dessin), avec implication des parents.\n\n**Pour les adolescents** (12-18 ans) : accompagnement spécifique aux problématiques de cet âge (identité, scolarité, relations).\n\nPour les enfants de moins de 6 ans, je peux vous orienter vers des confrères spécialisés en petite enfance.',
-      },
-      {
-        question: 'Accompagnez-vous les couples ?',
-        answer:
-          'Oui, je propose de la **thérapie de couple** en approche systémique.\n\nLa thérapie de couple est adaptée pour :\n- Améliorer la communication\n- Résoudre des conflits récurrents\n- Traverser une crise (infidélité, deuil, etc.)\n- Repenser la relation après une naissance\n- Accompagner une séparation dans le respect mutuel\n\n**Tarif :** 90€ la séance (60 minutes)',
+          'J\'accueille les **adolescents à partir de 16 ans** et les **adultes** (sans limite d\'âge).\n\n**Pour les adolescents** (16-18 ans) : accompagnement spécifique aux problématiques de cet âge (identité, scolarité, relations, orientation).\n\n**Pour les adultes** : accompagnement personnalisé selon vos besoins et problématiques.\n\nPour les enfants et adolescents de moins de 16 ans, je peux vous orienter vers des confrères spécialisés.',
       },
       {
         question: 'Faut-il être "malade" pour consulter un psychologue ?',
