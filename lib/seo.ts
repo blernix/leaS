@@ -8,7 +8,7 @@ import { Metadata } from 'next'
 export const siteConfig = {
   name: 'Léa Sgiaravello',
   title: 'Psychologue à Bordeaux | Léa Sgiaravello',
-  description: 'Psychologue clinicienne à Bordeaux. Clinique intégrative (TCC, psychodynamique, thérapie narrative). Accompagnement adultes, jeunes adultes, neurodiversité. Mon Soutien Psy.',
+  description: 'Psychologue clinicienne à Bordeaux. Prise de RDV en ligne sur Doctolib. Clinique intégrative (TCC, psychodynamique, thérapie narrative). Accompagnement adultes, neurodiversité. Mon Soutien Psy.',
   url: process.env.NEXT_PUBLIC_SITE_URL || 'https://lea-sgiaravello-psy.fr',
   locale: 'fr_FR',
   author: 'Léa Sgiaravello',
@@ -54,7 +54,7 @@ export function generateMetadata({
   ogImage?: string
 }): Metadata {
   const url = `${siteConfig.url}${path}`
-  const image = ogImage || `${siteConfig.url}/og-image.jpg`
+  const image = ogImage || `${siteConfig.url}/images/profil_sgiaravello.webp`
 
   return {
     title: `${title} | ${siteConfig.name}`,
@@ -64,6 +64,8 @@ export function generateMetadata({
     keywords: [
       'psychologue Bordeaux',
       'psychologue Bordeaux centre',
+      'Doctolib psychologue Bordeaux',
+      'rendez-vous psychologue en ligne',
       'thérapie Bordeaux',
       'consultation psychologique',
       'anxiété',
@@ -72,11 +74,14 @@ export function generateMetadata({
       'TCC Bordeaux',
       'thérapie cognitive comportementale',
       'thérapie narrative',
+      'psychodynamique',
       'neurodiversité',
       'TDAH',
       'HPI',
+      'TSA',
       'Mon Soutien Psy',
       'remboursement psychologue',
+      'Léa Sgiaravello',
     ],
     openGraph: {
       type: 'website',
@@ -126,7 +131,7 @@ export function generateLocalBusinessSchema() {
     '@type': 'Psychologist',
     '@id': siteConfig.url,
     name: siteConfig.professional.name,
-    image: `${siteConfig.url}/images/profile.jpg`,
+    image: `${siteConfig.url}/images/profil_sgiaravello.webp`,
     url: siteConfig.url,
     telephone: siteConfig.professional.phone,
     email: siteConfig.professional.email,
@@ -158,7 +163,11 @@ export function generateLocalBusinessSchema() {
       name: 'Bordeaux',
       '@id': 'https://www.wikidata.org/wiki/Q1479',
     },
-    sameAs: Object.values(siteConfig.social).filter(Boolean),
+    sameAs: [
+      'https://www.doctolib.fr/psychologue/bordeaux/lea-sgiaravello',
+      'https://www.google.com/maps/place/?q=place_id:ChIJCZLHxVm3Vg0RcF1Kf0QqKAE',
+      ...Object.values(siteConfig.social).filter(Boolean),
+    ],
   }
 }
 

@@ -113,46 +113,63 @@ export default function InformationsPratiquesPage() {
               </div>
             </Card>
 
-            {/* Téléphone et email */}
-            <Card hover padding="lg">
+            {/* Prendre rendez-vous */}
+            <Card hover padding="lg" className="bg-gradient-to-br from-accent-50 to-white border-2 border-accent-200">
               <div className="flex items-start gap-4">
-                <div className="w-12 h-12 rounded-full bg-primary-100 text-primary-500 flex items-center justify-center flex-shrink-0">
+                <div className="w-12 h-12 rounded-full bg-accent-500 text-white flex items-center justify-center flex-shrink-0">
                   <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path
                       strokeLinecap="round"
                       strokeLinejoin="round"
                       strokeWidth={2}
-                      d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+                      d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
                     />
                   </svg>
                 </div>
                 <div className="flex-1">
                   <h2 className="text-2xl font-heading font-bold text-neutral-900 mb-3">
-                    Contact
+                    Prendre rendez-vous
                   </h2>
-                  <div className="space-y-3 text-neutral-700">
-                    <div>
-                      <p className="text-sm text-neutral-600 mb-1">Téléphone :</p>
-                      <a
-                        href={`tel:${siteConfig.professional.phone.replace(/\s/g, '')}`}
-                        className="text-primary-500 hover:text-primary-600 font-medium underline focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 rounded"
-                      >
-                        {siteConfig.professional.phone}
-                      </a>
-                    </div>
-                    <div>
-                      <p className="text-sm text-neutral-600 mb-1">Email :</p>
-                      <a
-                        href={`mailto:${siteConfig.professional.email}`}
-                        className="text-primary-500 hover:text-primary-600 font-medium underline focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 rounded break-all"
-                      >
-                        {siteConfig.professional.email}
-                      </a>
-                    </div>
-                    <p className="text-sm text-neutral-600 mt-4">
-                      Réponse sous 24-48 heures
-                    </p>
-                  </div>
+                  <p className="text-neutral-700 mb-4">
+                    Réservez votre consultation en ligne directement sur Doctolib.
+                    Confirmation immédiate et gestion simplifiée de vos rendez-vous.
+                  </p>
+                  <a
+                    href="https://www.doctolib.fr/psychologue/bordeaux/lea-sgiaravello"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 px-6 py-3 bg-accent-500 text-white rounded-lg hover:bg-accent-600 transition-all shadow-md hover:shadow-lg font-medium focus:outline-none focus-visible:ring-2 focus-visible:ring-accent-500 focus-visible:ring-offset-2"
+                  >
+                    <svg
+                      className="w-5 h-5"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                      aria-hidden="true"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+                      />
+                    </svg>
+                    Réserver sur Doctolib
+                    <svg
+                      className="w-4 h-4"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                      aria-hidden="true"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                      />
+                    </svg>
+                  </a>
                 </div>
               </div>
             </Card>

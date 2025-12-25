@@ -26,12 +26,12 @@ export default function Footer() {
             </p>
           </div>
 
-          {/* Colonne 2 : Contact */}
+          {/* Colonne 2 : Adresse & Rendez-vous */}
           <div>
             <h2 className="text-lg font-heading font-semibold text-white mb-4">
-              Contact
+              Cabinet
             </h2>
-            <address className="not-italic text-sm space-y-2">
+            <address className="not-italic text-sm space-y-4">
               <p className="flex items-start gap-2">
                 <svg
                   className="w-5 h-5 mt-0.5 flex-shrink-0"
@@ -61,51 +61,30 @@ export default function Footer() {
                 </span>
               </p>
 
-              <p className="flex items-center gap-2">
-                <svg
-                  className="w-5 h-5 flex-shrink-0"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  aria-hidden="true"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
-                  />
-                </svg>
+              <div>
                 <a
-                  href={`tel:${siteConfig.professional.phone.replace(/\s/g, '')}`}
-                  className="hover:text-white transition-colors underline focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 rounded"
+                  href="https://www.doctolib.fr/psychologue/bordeaux/lea-sgiaravello"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 px-4 py-2 bg-accent-500 text-white rounded-lg hover:bg-accent-600 transition-colors text-sm font-medium focus:outline-none focus-visible:ring-2 focus-visible:ring-accent-500 focus-visible:ring-offset-2 focus-visible:ring-offset-neutral-800"
                 >
-                  {siteConfig.professional.phone}
+                  <svg
+                    className="w-4 h-4"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    aria-hidden="true"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+                    />
+                  </svg>
+                  Prendre rendez-vous
                 </a>
-              </p>
-
-              <p className="flex items-center gap-2">
-                <svg
-                  className="w-5 h-5 flex-shrink-0"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  aria-hidden="true"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
-                  />
-                </svg>
-                <a
-                  href={`mailto:${siteConfig.professional.email}`}
-                  className="hover:text-white transition-colors underline focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 rounded"
-                >
-                  {siteConfig.professional.email}
-                </a>
-              </p>
+              </div>
             </address>
           </div>
 
@@ -143,9 +122,22 @@ export default function Footer() {
         {/* Bas du footer */}
         <div className="mt-12 pt-8 border-t border-neutral-700">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-neutral-400">
-            <p>
-              © {currentYear} Léa Sgiaravello - Psychologue. Tous droits réservés.
-            </p>
+            <div className="text-center md:text-left">
+              <p className="mb-2">
+                © {currentYear} Léa Sgiaravello - Psychologue. Tous droits réservés.
+              </p>
+              <p className="text-xs">
+                Site créé par{' '}
+                <a
+                  href="https://killian-lecrut.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-primary-400 hover:text-primary-300 underline transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 rounded"
+                >
+                  l'agence Killian Lecrut
+                </a>
+              </p>
+            </div>
             <p className="text-xs">
               Site conforme RGPD • Accessible WCAG 2.1 AA
             </p>
