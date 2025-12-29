@@ -97,16 +97,6 @@ export default function PrendreRendezVousPage() {
                 </p>
               </Card>
 
-              <Card hover>
-                <h3 className="font-semibold text-neutral-900 mb-2">
-                  Puis-je consulter en visioconférence ?
-                </h3>
-                <p className="text-sm text-neutral-700">
-                  Oui, les consultations en visioconférence sont possibles via un outil
-                  sécurisé. Vous pouvez sélectionner ce mode de consultation lors de votre
-                  réservation sur Doctolib.
-                </p>
-              </Card>
 
               <Card hover>
                 <h3 className="font-semibold text-neutral-900 mb-2">

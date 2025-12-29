@@ -142,26 +142,8 @@ export default function BeforeAppointment() {
           </div>
 
           <div className="flex items-start gap-2">
-            <svg
-              className="w-5 h-5 text-primary-500 flex-shrink-0 mt-0.5"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-              aria-hidden="true"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
-              />
-            </svg>
-            <div>
-              <p className="font-semibold text-neutral-900">Téléconsultation</p>
-              <p className="text-neutral-700">
-                Les séances en visioconférence sont possibles via un outil sécurisé
-              </p>
-            </div>
+          
+          
           </div>
         </div>
       </Card>

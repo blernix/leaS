@@ -52,7 +52,7 @@ const faqs = [
       {
         question: 'Combien coûte une séance ?',
         answer:
-          '**Tarifs :**\n- Hors Mon Soutien Psy : **60€**\n- Avec Mon Soutien Psy : **50€**\n\nDurée : 1h pour la 1ère séance, puis 50 min (hors MSP) ou 40 min (avec MSP)\n\nLe règlement s\'effectue à la fin de chaque séance (chèque, espèces ou virement). Une facture vous sera remise.',
+          '**Tarifs :**\n- Hors Mon Soutien Psy : **60€**\n- Avec Mon Soutien Psy : **50€**\n\nDurée : 1h pour la 1ère séance, puis 50 min (hors MSP) ou 40 min (avec MSP)\n\nLe règlement s\'effectue à la fin de chaque séance (chèque ou espèces). Une facture vous sera remise.',
       },
       {
         question: 'Suis-je remboursé(e) par la Sécurité sociale ou ma mutuelle ?',
@@ -73,11 +73,6 @@ const faqs = [
         question: 'À quelle fréquence dois-je venir en consultation ?',
         answer:
           'La fréquence est adaptée à vos besoins et objectifs :\n\n- **1 fois par semaine** : thérapie intensive, difficultés aiguës\n- **1 fois tous les 15 jours** : rythme le plus courant, bon équilibre\n- **1 fois par mois** : suivi d\'entretien, consolidation des acquis\n\nNous définirons ensemble le rythme le plus adapté à votre situation.',
-      },
-      {
-        question: 'Puis-je consulter en visioconférence ?',
-        answer:
-          'Oui, les **consultations en ligne** sont possibles via un outil de visioconférence sécurisé.\n\nElles sont particulièrement adaptées si :\n- Vous habitez loin du cabinet\n- Vous avez des difficultés à vous déplacer\n- Votre emploi du temps est très contraint\n- Vous êtes en déplacement temporaire\n\nLe tarif est le même qu\'en présentiel. La qualité thérapeutique est généralement similaire, même si le présentiel reste préférable quand c\'est possible.',
       },
       {
         question: 'Comment annuler ou reporter un rendez-vous ?',
