@@ -1,5 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  experimental: { serverActions: false },
   // Export statique pour hébergement simple
   // Le formulaire appelle maintenant une API externe (emailpro), donc l'export statique fonctionne
   output: 'export',
